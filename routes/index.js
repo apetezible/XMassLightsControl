@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/Radio', function(req, res, next) {
 
-  var Board = new JohnnyFive.Board();
+  var Board = new JohnnyFive.Board({port:"COM5"});
 
   Board.on("ready", function() {
     var Radio = new five.Led(5);
