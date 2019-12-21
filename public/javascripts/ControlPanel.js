@@ -16,5 +16,9 @@ PlainPi.drawImage(Phi, 0, 0);
 Canvas.addEventListener("click", goTo);
 
 function goTo(Click){
-  window.location.href = '/Radio';
+  if ((Click.layerX>0)&&(Click.layerX<170)){
+    if ((Click.layerY>345)&&(Click.layerY<515)){
+      window.location.href = '/Radio';
+    }
+  }
 }

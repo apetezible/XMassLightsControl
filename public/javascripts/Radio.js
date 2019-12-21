@@ -18,6 +18,10 @@ MannStereo.play();
 }
 
 Canvas.addEventListener("click", turnOff);
-function turnOff(){
-  window.location.href = '/';
+function turnOff(Click){
+  if ((Click.layerX>0)&&(Click.layerX<170)){
+    if ((Click.layerY>345)&&(Click.layerY<515)){
+      window.location.href = '/';
+    }
+  }
 }
