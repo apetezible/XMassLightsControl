@@ -16,3 +16,8 @@ function draw(){
 PlainPi.drawImage(Phi, 0, 0);
 MannStereo.play();
 }
+
+Canvas.addEventListener("click", turnOff);
+function turnOff(){
+  window.location.href = '/';
+}
