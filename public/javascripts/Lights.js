@@ -44,7 +44,7 @@ function turnOff(Click){
   }
   if ((Click.layerX>g[0])&&(Click.layerX<h[0])){
     if ((Click.layerY>g[1])&&(Click.layerY<j[1])){
-      window.location.href = '/Lights';
+      window.location.href = '/';
     }
   }
 }
