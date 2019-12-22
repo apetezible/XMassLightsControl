@@ -24,7 +24,18 @@ Board.on("ready", function() {
 
   router.get('/Radio', function(req, res, next) {
     Radio.off();
+    Laser.on();
+    LightBulb.on();
+    Lights.on();
     res.render('Radio', { title: 'Express' });
+  });
+  /* GET {l} page. */
+  router.get('/Laser', function(req, res, next) {
+    Radio.on();
+    Laser.off();
+    LightBulb.on();
+    Lights.on();
+    res.render('Laser', { title: 'Express' });
   });
 
 });
