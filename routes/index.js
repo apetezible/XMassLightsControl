@@ -93,12 +93,13 @@ Board.on("ready", function() {
     res.render('LightbulbLights', { title: 'Express' });
   });
 /* GET {l;b} page. */
-router.get('/LaserLightbulb', function(req, res, next) {
-  Radio.on();
-  Laser.off();
-  LightBulb.off();
-  Lights.on();
-  res.render('LaserLightbulb', { title: 'Express' });
+  router.get('/LaserLightbulb', function(req, res, next) {
+    Radio.on();
+    Laser.off();
+    LightBulb.off();
+    Lights.on();
+    res.render('LaserLightbulb', { title: 'Express' });
+ });
 });
 
 module.exports = router;
