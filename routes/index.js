@@ -21,7 +21,6 @@ Board.on("ready", function() {
   });
 
   /* GET {r} page. */
-
   router.get('/Radio', function(req, res, next) {
     Radio.off();
     Laser.on();
@@ -93,7 +92,6 @@ Board.on("ready", function() {
     Lights.off();
     res.render('LightbulbLights', { title: 'Express' });
   });
-});
 /* GET {l;b} page. */
 router.get('/LaserLightbulb', function(req, res, next) {
   Radio.on();
@@ -101,7 +99,6 @@ router.get('/LaserLightbulb', function(req, res, next) {
   LightBulb.off();
   Lights.on();
   res.render('LaserLightbulb', { title: 'Express' });
-});
 });
 
 module.exports = router;
