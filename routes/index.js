@@ -110,7 +110,6 @@ Board.on("ready", function() {
      Lights.on();
      res.render('RadioLaserLightbulb', { title: 'Express' });
   });
-});
 /* GET {l;b;n} page. */
   router.get('/LaserLightbulbLights', function(req, res, next) {
     Radio.on();
@@ -118,7 +117,7 @@ Board.on("ready", function() {
     LightBulb.off();
     Lights.off();
     res.render('LaserLightbulbLights', { title: 'Express' });
- });
+    });
  /* GET {r;l;n} page. */
    router.get('/RadioLaserLights', function(req, res, next) {
      Radio.off();
@@ -126,7 +125,7 @@ Board.on("ready", function() {
      LightBulb.on();
      Lights.off();
      res.render('RadioLaserLights', { title: 'Express' });
-  });
+     });
   /* GET {r;b;n} page. */
     router.get('/RadioLightbulbLights', function(req, res, next) {
       Radio.off();
@@ -134,7 +133,7 @@ Board.on("ready", function() {
       LightBulb.off();
       Lights.off();
       res.render('RadioLightbulbLights', { title: 'Express' });
-   });
+      });
 
    /* GET {r;l;b;n} page. */
      router.get('/RadioLaserLightbulbLights', function(req, res, next) {
@@ -143,7 +142,7 @@ Board.on("ready", function() {
        LightBulb.off();
        Lights.off();
        res.render('RadioLaserLightbulbLights', { title: 'Express' });
-    });
+       });
 });
 
 module.exports = router;
