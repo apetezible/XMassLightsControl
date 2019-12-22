@@ -39,7 +39,7 @@ function goTo(Click){
   }
   if ((Click.layerX>c[0])&&(Click.layerX<d[0])){
     if ((Click.layerY>c[1])&&(Click.layerY<f[1])){
-      window.location.href = '/LightBulb';
+      window.location.href = '/Lightbulb';
     }
   }
   if ((Click.layerX>g[0])&&(Click.layerX<h[0])){

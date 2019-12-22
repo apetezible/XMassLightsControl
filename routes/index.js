@@ -53,7 +53,55 @@ Board.on("ready", function() {
     Lights.off();
     res.render('Lights', { title: 'Express' });
   });
-
+  /* GET {r;l} page. */
+  router.get('/RadioLaser', function(req, res, next) {
+    Radio.off();
+    Laser.off();
+    LightBulb.on();
+    Lights.on();
+    res.render('RadioLaser', { title: 'Express' });
+  });
+  /* GET {r;b} page. */
+  router.get('/RadioLightbulb', function(req, res, next) {
+    Radio.off();
+    Laser.on();
+    LightBulb.off();
+    Lights.on();
+    res.render('RadioLightbulb', { title: 'Express' });
+  });
+  /* GET {r;n} page. */
+  router.get('/RadioLights', function(req, res, next) {
+    Radio.off();
+    Laser.on();
+    LightBulb.on();
+    Lights.off();
+    res.render('RadioLights', { title: 'Express' });
+  });
+  /* GET {l;n} page. */
+  router.get('/LaserLights', function(req, res, next) {
+    Radio.on();
+    Laser.off();
+    LightBulb.on();
+    Lights.off();
+    res.render('LaserLights', { title: 'Express' });
+  });
+  /* GET {b;n} page. */
+  router.get('/LightbulbLights', function(req, res, next) {
+    Radio.on();
+    Laser.on();
+    LightBulb.off();
+    Lights.off();
+    res.render('LightbulbLights', { title: 'Express' });
+  });
+});
+/* GET {l;b} page. */
+router.get('/LaserLightbulb', function(req, res, next) {
+  Radio.on();
+  Laser.off();
+  LightBulb.off();
+  Lights.on();
+  res.render('LaserLightbulb', { title: 'Express' });
+});
 });
 
 module.exports = router;
