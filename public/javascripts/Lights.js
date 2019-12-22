@@ -16,7 +16,7 @@ var i = [95, 996];
 var j = [490, 996];
 
 var Phi = new Image();
-Phi.src = "../images/Lightbulb.png";
+Phi.src = "../images/Lights.png";
 
 Phi.addEventListener("load", draw);
 
