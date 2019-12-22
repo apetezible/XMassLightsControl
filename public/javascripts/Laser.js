@@ -40,4 +40,5 @@ function turnOff(Click){
     if ((Click.layerY>g[1])&&(Click.layerY<j[1])){
       window.location.href = '/LaserLights';
     }
+  }
 }
