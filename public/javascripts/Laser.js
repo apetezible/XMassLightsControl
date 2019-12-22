@@ -8,6 +8,12 @@ var a = [780, 170];
 var b = [978, 170];
 var c = [780, 380];
 var d = [978, 380];
+var e = [780, 680];
+var f = [978, 680];
+var g = [95, 660];
+var h = [490, 660];
+var i = [95, 996];
+var j = [490, 996];
 
 var Phi = new Image();
 Phi.src = "../images/Laser.png";
