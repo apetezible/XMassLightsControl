@@ -16,7 +16,7 @@ Canvas.width  = window.innerWidth;
 Canvas.height = window.innerHeight;
 
 var Phi = new Image();
-Phi.src = "../images/RadioLaserLightbulb.png";
+Phi.src = "../images/LaserLightbulbLights.png";
 
 Phi.addEventListener("load", draw);
 
