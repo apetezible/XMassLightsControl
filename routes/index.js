@@ -37,6 +37,22 @@ Board.on("ready", function() {
     Lights.on();
     res.render('Laser', { title: 'Express' });
   });
+  /* GET {b} page. */
+  router.get('/Lightbulb', function(req, res, next) {
+    Radio.on();
+    Laser.on();
+    LightBulb.off();
+    Lights.on();
+    res.render('Lightbulb', { title: 'Express' });
+  });
+  /* GET {n} page. */
+  router.get('/Lights', function(req, res, next) {
+    Radio.on();
+    Laser.on();
+    LightBulb.on();
+    Lights.off();
+    res.render('Lights', { title: 'Express' });
+  });
 
 });
 

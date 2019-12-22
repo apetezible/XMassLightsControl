@@ -21,9 +21,23 @@ PlainPi.drawImage(Phi, 0, 0);
 
 Canvas.addEventListener("click", turnOff);
 function turnOff(Click){
+  if ((Click.layerX>0)&&(Click.layerX<170)){
+    if ((Click.layerY>345)&&(Click.layerY<515)){
+      window.location.href = '/RadioLaser';
+    }
+  }
   if ((Click.layerX>a[0])&&(Click.layerX<b[0])){
     if ((Click.layerY>a[1])&&(Click.layerY<c[1])){
       window.location.href = '/';
     }
   }
+  if ((Click.layerX>c[0])&&(Click.layerX<d[0])){
+    if ((Click.layerY>c[1])&&(Click.layerY<f[1])){
+      window.location.href = '/LaserLightBulb';
+    }
+  }
+  if ((Click.layerX>g[0])&&(Click.layerX<h[0])){
+    if ((Click.layerY>g[1])&&(Click.layerY<j[1])){
+      window.location.href = '/LaserLights';
+    }
 }
