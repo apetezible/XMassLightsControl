@@ -1,10 +1,10 @@
-##Abstract
+## Abstract
 I’ll be controlling an Electric Installation over the Internet by connecting a Relay Module to an Arduino Uno. Using the Standard Firmata it is possible to control an Arduino by applying electronic inputs in it, the Source of those will be my Laptop running a Node.js Server using the Johnny-Five Library. For connecting the environment to the Internet it is necessary to use a Library and open your router’s ports, on this experiment I’ll use the Express Library.
 
-##Introduction
+## Introduction
 When abled to make a Node.js server for controlling an Arduino through Standard Fimata, and also setting HTTP servers using Express. The idea of controlling an Arduino Uno over the internet came to my mind. But it wasn’t until I needed to control remotely four electric Installations in my home that I decided to make this project.
 
-##Methods
+## Methods
 I needed to control four Electric Installations on my home over the internet with my cellphone. I call an Electric Installation a device which will turn on whenever there is electricity and off when there is no. Those Electric Installations are a Radio, a Laser device, a Lightbulb and the Christmas Lights. For controlling the electricity passing in a with a digital input there is a Module called a Relay, for this project I used a 250VAC / 4 Channel Relay Module (because I have to Control 4 Electric Installations AC). For this example, I set the configuration whereas a normal state there is no electricity.
 
 I used the Arduino Genuino Uno board configurated with the Standard Firmata which can be found ready to upload to the Arduino Board via USB in the Arduino IDE. This script is set to use the digital ports 5, 4, 3, 2, so I connected each channel from the Relay Module and the 5V output from the Arduino to the Relay Module VCC. 
